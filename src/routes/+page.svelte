@@ -4,6 +4,8 @@
   import { holidays } from "../stores/holiday-store";
   import Dropdown from "../components/dropdown.svelte";
 
+  export const prerender = true;
+
   let holidayName = "";
   function addHoliday() {
     if (!holidayName) {
